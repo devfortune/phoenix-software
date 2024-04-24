@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: software-phoenix
+  datasource:
+    url: jdbc:postgresql://localhost:5432/phoenix_db
+    username: meir
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8081
